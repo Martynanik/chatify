@@ -3,16 +3,12 @@ import MainStore from "../store/MainStore";
 import http from "../plugins/http";
 
 
-
-
 const SingleUserProfilePage = () =>{
     const { setActiveConversationsNum, setActiveConversations, user, username, token} = MainStore()
     const [profile, setProfile] = useState([])
     const messageRef = useRef();
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
-
-
 
     useEffect(() => {
         http.get(`https://chatify-back-1e7h.onrender.com/singleUser/${username}`)
@@ -50,7 +46,7 @@ const SingleUserProfilePage = () =>{
     return(
         <div >
             {profile &&
-                <div className="flex justify-center items-center mx-6 my-6 ">
+                <div className=" flex justify-center mt-[24px] md:mt-[100px]  mx-6 my-6 ">
                     <div className="card w-full max-w-md shadow-2xl bg-base-100">
                         <div className="card-body items-center text-center">
                             <div className="avatar mb-4">

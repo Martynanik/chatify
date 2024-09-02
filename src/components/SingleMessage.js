@@ -18,7 +18,7 @@ const SingleMessage = ({ message, conversationId }) => {
             messageId: message._id,
             conversationId:  conversationId
         }
-        const res = await http.post(`http://localhost:2000/sendLike`, info)
+        const res = await http.post(`https://chatify-back-1e7h.onrender.com/sendLike`, info)
         if(res.message === "Message liked or unliked"){
             setMessages(res.data.messages)
             setTrigger((prev) => prev + 1);

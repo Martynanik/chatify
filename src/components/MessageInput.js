@@ -21,7 +21,7 @@ const MessageInput = ({convId}) =>{
             recipientId : selectedConversation.otherParticipantId,
             text : messageRef.current.value,
         }
-        const res = await http.postAut("http://localhost:2000/sendMessageInChat", message, token)
+        const res = await http.postAut("https://chatify-back-1e7h.onrender.com/sendMessageInChat", message, token)
 
         if(res.message === "Message send successfully"){
             setError("")

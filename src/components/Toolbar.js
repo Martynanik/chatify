@@ -9,7 +9,7 @@ const Toolbar = () =>{
     const nav=useNavigate()
     useEffect(() => {
         if (user) {
-            http.get(`http://localhost:2000/allConversations/${user._id}`)
+            http.get(`https://chatify-back-1e7h.onrender.com/allConversations/${user._id}`)
                 .then(res => {
                     setActiveConversationsNum(res.data.conversationDetails.length);
                     setActiveConversations(res.data.conversationDetails);
