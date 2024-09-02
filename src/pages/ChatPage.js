@@ -24,10 +24,10 @@ const ChatPage= () =>{
     }, [])
 
     return(
-        <div className=" flex flex-col items-center  mt-20 ">
-            <div className=" flex items-center gap-2 bg-blue-500 rounded-t-lg h-15 w-full max-w-md p-2 ">
+        <div className=" flex flex-col items-center  mt-3 md:mt-20 ">
+            <div className=" flex items-center gap-2 bg-[#4c1d95] rounded-t-lg h-15 w-full max-w-md p-2 ">
                 <div className="chat-image avatar">
-                    <div className="w-10 rounded-full ring ring-primary">
+                    <div className="w-10 rounded-full ring ring-secondary">
                         <img src={selectedConversation.image} alt="Profile"/>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const ChatPage= () =>{
                 </div>
 
             </div>
-            <div className=" card w-full max-w-md shadow-2xl bg-base-100 p-4 ">
+            <div className=" w-full max-w-md shadow-2xl bg-base-100 p-4 rounded-b-lg">
 
                 <div className="h-100 ">
                     <div className="h-80 overflow-y-auto ">

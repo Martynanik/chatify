@@ -47,11 +47,11 @@ const MessageInput = ({convId}) =>{
                     ref={messageRef}
                     type="text"
                     placeholder="Send new message"
-                    className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-primary"
+                    className="input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-[#4c1d95]"
                 />
                 <button
                     onClick={() => sendNewMessage()}
-                    className="btn btn-primary"
+                    className="btn btn-secondary"
                 >
                     Send
                 </button>

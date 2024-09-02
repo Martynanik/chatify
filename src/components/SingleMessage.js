@@ -9,7 +9,7 @@ const SingleMessage = ({ message, conversationId }) => {
     const formattedTime = extractTime(message.createdAt);
     const chatClassName = fromMe ? 'chat-end' : 'chat-start';
     const profilePic = fromMe ? user.image : selectedConversation.image;
-    const bubbleBgColor = fromMe ? 'bg-blue-500' : 'bg-gray-500';
+    const bubbleBgColor = fromMe ? 'bg-[#4c1d95]' : 'bg-gray-500';
     const likedMessage = message.like === true
 
     async function sendLike(){

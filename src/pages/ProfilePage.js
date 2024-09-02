@@ -23,7 +23,7 @@ const ProfilePage = () =>{
     return(
         <div>
             {user &&
-                <div className="flex justify-center items-center h-screen bg-base-200">
+                <div className="flex justify-center mt-[24px] md:mt-[100px]  ">
                     <div className="card w-full max-w-md shadow-2xl bg-base-100">
                         <div className="card-body items-center text-center">
                             <div className="avatar mb-4">
@@ -36,7 +36,7 @@ const ProfilePage = () =>{
                             <div className="grid grid-cols-1 gap-4">
                             <button
                                     onClick={()=> nav('/changeUsername')}
-                                    className="btn btn-outline btn-primary"
+                                    className="btn btn-outline btn-secondary"
                                 >
                                     Change Username
                                 </button>
@@ -50,7 +50,7 @@ const ProfilePage = () =>{
 
                                 <button
                                     onClick={()=> nav('/changePassword')}
-                                    className="btn btn-outline btn-accent"
+                                    className="btn btn-outline btn-secondary"
                                 >
                                     Change Password
                                 </button>

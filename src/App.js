@@ -21,12 +21,12 @@ function App() {
         setShowFadingScreen(false)
     };
   return (
-    <div>
+    <div className="back">
         <BrowserRouter>
             {showFadingScreen ? (
                 <FadingScreen onFinish={handleSplashFinish}/>
             ) : (
-            <div>
+            <div className="back">
                 <Toolbar/>
                 <Routes>
                     <Route path="/" element={<ChatifyPage/>}/>

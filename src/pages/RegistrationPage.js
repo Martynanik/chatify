@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 import http from "../plugins/http";
 
 
+
 const RegistrationPage = () =>{
     const usernameRef = useRef();
     const passwordOneRef = useRef()
@@ -47,7 +48,7 @@ const RegistrationPage = () =>{
     return(
 
         <div>
-            <div className="flex justify-center items-center h-screen">
+            <div className="flex justify-center mt-[24px] md:mt-[100px] ">
                 <div className="card w-full max-w-sm shadow-2xl bg-base-100">
                     <div className="card-body">
                         <h2 className="text-center text-2xl font-bold mb-4">Register</h2>
@@ -108,6 +109,10 @@ const RegistrationPage = () =>{
                                 <button type="submit" className="btn btn-primary w-full">Register</button>
                             </div>
                         </form>
+                        <div className="flex gap-1">
+                            <div> Already have an account?</div>
+                            <div className="cursor-pointer	" onClick={()=>nav('/login')}> Login</div>
+                        </div>
                     </div>
                 </div>
             </div>

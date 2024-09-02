@@ -18,8 +18,8 @@ const Toolbar = () =>{
         }
     }, [user]);
     return (
-        <div className="navbar bg-base-100 shadow-lg flex-2 mx-4">
-            <div className="flex-1">
+        <div className="navbar bg-base-100 shadow-lg flex-2">
+            <div className="flex-1  mx-4">
                 <div onClick={()=>nav("/")} className="cursor-pointer normal-case font-bold text-xl">Chatify</div>
             </div>
             <div className="flex gap-3 p-2 mx-4">
