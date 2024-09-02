@@ -35,7 +35,7 @@ const RegistrationPage = () =>{
             passwordTwo : passwordTwoRef.current.value
 
         }
-        const res = await http.post("http://localhost:2000/register", user)
+        const res = await http.post("https://chatify-back-1e7h.onrender.com/register", user)
 
         if(res.message === "User was registered successfully"){
             nav('/login')

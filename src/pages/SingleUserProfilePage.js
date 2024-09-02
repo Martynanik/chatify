@@ -15,7 +15,7 @@ const SingleUserProfilePage = () =>{
 
 
     useEffect(() => {
-        http.get(`http://localhost:2000/singleUser/${username}`)
+        http.get(`https://chatify-back-1e7h.onrender.com/singleUser/${username}`)
             .then(res => {
                 setProfile(res.data)
             })
@@ -35,7 +35,7 @@ const SingleUserProfilePage = () =>{
             text : messageRef.current.value,
         }
 
-        const res = await http.postAut("http://localhost:2000/sendMessage", message, token)
+        const res = await http.postAut("https://chatify-back-1e7h.onrender.com/sendMessage", message, token)
 
         if(res.message === "Message send successfully"){
             setError("")

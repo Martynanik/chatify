@@ -18,7 +18,7 @@ const LoginPage = () => {
             password: passwordRef.current.value,
         };
 
-        const res = await http.post("http://localhost:2000/login", userLogged);
+        const res = await http.post("https://chatify-back-1e7h.onrender.com/login", userLogged);
 
         if (res.message === "Successful login") {
             setUser(res.data.loggedUser);

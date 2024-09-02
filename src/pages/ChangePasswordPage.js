@@ -21,7 +21,7 @@ const ChangePasswordPage = () =>{
             passwordOne: passwordOneRef.current.value,
             passwordTwo: passwordTwoRef.current.value,
         }
-        const res = await http.postAut("http://localhost:2000/changePassword", info, token)
+        const res = await http.postAut("https://chatify-back-1e7h.onrender.com/changePassword", info, token)
 
         if(res.message === "Password changed successfully"){
             setError("")

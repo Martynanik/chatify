@@ -17,7 +17,7 @@ const ChangeUsernamePage = () =>{
             username: user.username,
             newUsername: usernameRef.current.value
         }
-        const res = await http.postAut("http://localhost:2000/changeUsername", info, token)
+        const res = await http.postAut("https://chatify-back-1e7h.onrender.com/changeUsername", info, token)
 
         if(res.message === "Username changed successfully"){
             setError("")

@@ -15,7 +15,7 @@ const ChangeProfilePicturePage = () =>{
             username: user.username,
             image: imageRef.current.value
         }
-        const res = await http.postAut("http://localhost:2000/changeProfilePicture", info, token)
+        const res = await http.postAut("https://chatify-back-1e7h.onrender.com/changeProfilePicture", info, token)
 
         if(res.message === "Profile picture changed successfully"){
             setError("")

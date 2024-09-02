@@ -11,7 +11,7 @@ const ChatPage= () =>{
     const { conversationId } = useParams(); // Extract the chatId from the URL
     const {setMessages, messages, trigger, selectedConversation} = MainStore()
     useEffect(() => {
-        http.get(`http://localhost:2000/getMessages/${conversationId}`)
+        http.get(`https://chatify-back-1e7h.onrender.com/getMessages/${conversationId}`)
             .then(res => {
                 setMessages(res.data)
             })

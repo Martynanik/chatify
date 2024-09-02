@@ -8,7 +8,7 @@ const AllUsersPage = () =>{
     const {user}=MainStore()
 
     useEffect(() => {
-        http.get("http://localhost:2000/allUsers")
+        http.get("https://chatify-back-1e7h.onrender.com/allUsers")
             .then(res => {
                 const fetchedUsers = res.data
                 const filteredUsers = fetchedUsers.filter(x => x.username !== user.username);
