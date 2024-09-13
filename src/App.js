@@ -21,7 +21,7 @@ function App() {
         setShowFadingScreen(false)
     };
   return (
-    <div className="back">
+    <div className="backFade">
         <BrowserRouter>
             {showFadingScreen ? (
                 <FadingScreen onFinish={handleSplashFinish}/>

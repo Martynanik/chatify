@@ -11,7 +11,6 @@ const ConversationsPage = () =>{
             convId: convId,
             participantId: user._id
         }
-//// WTF KODEL AS NETURIU NK PO DELETE CONVERSATIONS
         const res = await http.post(`https://chatify-back-1e7h.onrender.com/deleteConversation/`, info)
         setActiveConversationsNum(res.data.conversationDetails.length);
         setActiveConversations(res.data.conversationDetails);

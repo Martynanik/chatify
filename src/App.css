@@ -11,6 +11,19 @@
 .relative{
     position: relative;
 }
+.backFade {
+    background-image: url('https://cdn.dribbble.com/users/1658867/screenshots/4721860/attachments/1064507/wallpaper_1280x720.jpg?resize=800x600&vertical=center');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
 
 .back {
     background-image: url('https://cdn.dribbble.com/users/1658867/screenshots/4721860/attachments/1064507/wallpaper_1280x720.jpg?resize=800x600&vertical=center');
